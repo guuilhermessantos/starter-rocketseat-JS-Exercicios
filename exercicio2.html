@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+        <title>Curso JavaScript</title>
+    <body>
+
+        <script>
+            // JavaScript
+            var pares = [];
+
+            function expares(x,y) {
+                while (x <= y) {
+                    if ((x % 2) == 0){
+                        pares.push(x);
+                    }
+                    x++
+                }
+            }
+
+            expares(0,20)
+            console.log(pares);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+        <title>Curso JavaScript</title>
+    <body>
+
+        <script>
+            
+
+            function exibeHabilidades(usuarios){
+                for (usuarios of usuarios) {
+                    console.log('O', usuarios.nome, 'possui as habilidades: ', usuarios.habilidades.join(', '))
+                }
+            }
+
+            
+            var usuarios = [
+                {
+                    nome: 'Guilherme',
+                    habilidades: ['JavaScript', 'ReactJS', 'React Native']
+                },
+                {
+                    nome: 'Karoline',
+                    habilidades: ['VueJS', 'Ruby on Rails', 'Elixir']
+                }
+            ]
+
+            exibeHabilidades(usuarios)
+            
+        </script>
+    </body>
+</html>
